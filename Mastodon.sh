@@ -29,7 +29,7 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
-exec bash
+source ~/.bashrc
 
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
