@@ -42,11 +42,15 @@ gem install bundler --no-document
 EOF
 echo "Out"
 
-sudo -u postgres psql
+sudo -u postgres bash << EOF
+echo "In"
+
+psql
 
 CREATE USER mastodon CREATEDB;
 
-\q
+EOF
+echo "Out"
 
 sudo -u mastodon bash << EOF
 
