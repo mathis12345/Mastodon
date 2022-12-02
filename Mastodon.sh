@@ -16,7 +16,7 @@ yarn set version classic
 
 adduser --disabled-login mastodon
 
-apt install rbenv
+apt install rbenv -y
 
 sudo -u mastodon bash << EOF
 echo "In"
