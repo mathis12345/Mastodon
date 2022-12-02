@@ -22,30 +22,30 @@ adduser --disabled-login mastodon
 
 apt install rbenv -y
 
-sudo -u mastodon bash << EOF
+su - mastodon bash << EOF
 echo "In"
 
-sudo chmod 777 /usr
+chmod 777 /usr
 
-sudo chmod 777 /usr/bin
+chmod 777 /usr/bin
 
-sudo chmod 777 /usr/bin/rbenv
+chmod 777 /usr/bin/rbenv
 
-sudo chmod 777 /root
+chmod 777 /root
 
-sudo chmod 777 /root/Mastodon
+chmod 777 /root/Mastodon
 
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.4
 
 rbenv global 3.0.4
 
-sudo chmod 777 /var
+chmod 777 /var
 
-sudo chmod 777 /var/lib
+chmod 777 /var/lib
 
-sudo chmod 777 /var/lib/gems
+chmod 777 /var/lib/gems
 
-sudo chmod 777 /var/lib/gems/2.7.0
+chmod 777 /var/lib/gems/2.7.0
 
 gem install bundler --no-document
 
@@ -62,7 +62,7 @@ CREATE USER mastodon CREATEDB;
 EOF
 echo "Out"
 
-sudo -u mastodon bash << EOF
+su - mastodon bash << EOF
 echo "In"
 
 git clone https://github.com/mastodon/mastodon.git live && cd live
