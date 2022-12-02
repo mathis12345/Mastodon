@@ -40,7 +40,7 @@ chmod 777 /root
 
 chmod 777 /root/Mastodon
 
-su - mastodon bash << EOF
+sudo -u mastodon bash << EOF
 echo "In"
 
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.4
@@ -62,7 +62,7 @@ CREATE USER mastodon CREATEDB;
 EOF
 echo "Out"
 
-su - mastodon bash << EOF
+sudo -u mastodon bash << EOF
 echo "In"
 
 git clone https://github.com/mastodon/mastodon.git live && cd live
