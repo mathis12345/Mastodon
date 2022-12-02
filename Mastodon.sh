@@ -40,6 +40,12 @@ chmod 777 /root
 
 chmod 777 /root/Mastodon
 
+chmod 777 /usr
+
+chmod 777 /usr/local
+
+chmod 777 /usr/local/bin
+
 sudo -u mastodon bash << EOF
 echo "In"
 
