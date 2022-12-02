@@ -4,6 +4,8 @@ apt-get upgrade -y
 
 apt install -y fwupd libfwupd2 libfwupdplugin5
 
+apt install -y ruby-dev
+
 apt install -y curl wget gnupg apt-transport-https lsb-release ca-certificates
 
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
