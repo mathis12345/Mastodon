@@ -1,6 +1,6 @@
 apt-get update
 
-apt-get upgrade
+apt-get upgrade -y
 
 apt install -y curl wget gnupg apt-transport-https lsb-release ca-certificates
 
@@ -25,27 +25,27 @@ apt install rbenv -y
 sudo -u mastodon bash << EOF
 echo "In"
 
-chmod 777 /usr
+sudo chmod 777 /usr
 
-chmod 777 /usr/bin
+sudo chmod 777 /usr/bin
 
-chmod 777 /usr/bin/rbenv
+sudo chmod 777 /usr/bin/rbenv
 
-chmod 777 /root
+sudo chmod 777 /root
 
-chmod 777 /root/Mastodon
+sudo chmod 777 /root/Mastodon
 
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.4
 
 rbenv global 3.0.4
 
-chmod 777 /var
+sudo chmod 777 /var
 
-chmod 777 /var/lib
+sudo chmod 777 /var/lib
 
-chmod 777 /var/lib/gems
+sudo chmod 777 /var/lib/gems
 
-chmod 777 /var/lib/gems/2.7.0
+sudo chmod 777 /var/lib/gems/2.7.0
 
 gem install bundler --no-document
 
