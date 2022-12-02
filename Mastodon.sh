@@ -22,8 +22,13 @@ adduser --disabled-login mastodon
 
 apt install rbenv -y
 
-su - mastodon bash << EOF
-echo "In"
+chmod 777 /var
+
+chmod 777 /var/lib
+
+chmod 777 /var/lib/gems
+
+chmod 777 /var/lib/gems/2.7.0
 
 chmod 777 /usr
 
@@ -35,17 +40,12 @@ chmod 777 /root
 
 chmod 777 /root/Mastodon
 
+su - mastodon bash << EOF
+echo "In"
+
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.4
 
 rbenv global 3.0.4
-
-chmod 777 /var
-
-chmod 777 /var/lib
-
-chmod 777 /var/lib/gems
-
-chmod 777 /var/lib/gems/2.7.0
 
 gem install bundler --no-document
 
