@@ -1,3 +1,7 @@
+apt-get update
+
+apt-get upgrade
+
 apt install -y curl wget gnupg apt-transport-https lsb-release ca-certificates
 
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
@@ -21,9 +25,27 @@ apt install rbenv -y
 sudo -u mastodon bash << EOF
 echo "In"
 
+chmod 777 /usr
+
+chmod 777 /usr/bin
+
+chmod 777 /usr/bin/rbenv
+
+chmod 777 /root
+
+chmod 777 /root/Mastodon
+
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.4
 
 rbenv global 3.0.4
+
+chmod 777 /var
+
+chmod 777 /var/lib
+
+chmod 777 /var/lib/gems
+
+chmod 777 /var/lib/gems/2.7.0
 
 gem install bundler --no-document
 
@@ -50,6 +72,7 @@ git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 bundle config deployment 'true'
 
 bundle config without 'development test'
+
 bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
