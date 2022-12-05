@@ -50,6 +50,10 @@ chmod 777 /usr/local
 
 chmod 777 /usr/local/bin
 
+chmod 777 /home
+
+chmod 777 /home/mastodon
+
 sudo -u mastodon bash << EOF
 echo "In"
 
