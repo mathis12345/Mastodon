@@ -105,7 +105,7 @@ bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
-RAILS_ENV=production bundle exec rake mastodon:setup
+RAILS_ENV=production bundle exec rake mastodon-setup
 
 EOF
 echo "Out"
