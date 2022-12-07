@@ -107,6 +107,8 @@ bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
+RAILS_ENV=production bundle exec rake db:create
+
 RAILS_ENV=production bundle exec rake db:setup
 
 EOF
