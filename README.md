@@ -12,4 +12,13 @@ Zu beachtende Dinge:
 - cd Mastodon
 - ./Mastodon.sh
 
-2. Stellen sie sicher, dass Ihr Ubuntu-Server auf der Version 20.04.05 läuft.
+2. Sie müssen, wenn das Script fertig ist, folgende Befehle manuell in das Terminal eingeben.
+
+Befehle:
+<Pre>
+su - mastodon
+
+cd live
+
+RAILS_ENV=production bundle exec rake mastodon:setup
+</Pre>
