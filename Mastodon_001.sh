@@ -2,7 +2,7 @@
 
 apt-get update
 
-apt-get upgrade
+apt-get upgrade -y
 
 apt-get install software-properties-common dirmngr apt-transport-https ca-certificates redis-server curl gcc g++ make imagemagick ffmpeg libpq-dev libxml2-dev libxslt1-dev file git-core libprotobuf-dev protobuf-compiler pkg-config autoconf bison build-essential libssl-dev libyaml-dev libreadline-dev libidn11-dev libicu-dev libjemalloc-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev -y
 
