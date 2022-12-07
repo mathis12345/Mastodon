@@ -32,9 +32,7 @@ chmod 777 /var
 
 chmod 777 /var/lib
 
-chmod 777 /var/lib/gems
-
-chmod 777 /var/lib/gems/2.7.0
+chmod -R 777 /var/lib/gems
 
 chmod 777 /usr
 
