@@ -22,3 +22,5 @@ cd live
 
 RAILS_ENV=production bundle exec rake mastodon:setup
 </Pre>
+
+Nach dem dritten Befehl müssen Sie die angeforderten Daten angeben.
