@@ -4,6 +4,7 @@ Zu beachtende Dinge:
 
 1. Zuerst müssen sie als 'root - Benutzer' das Script "Mastodon_001.sh" ausführen, aber davor noch folgende Befehle manuell eingeben:
 
+<Pre>
 - (Benutzername vom Server eingeben)
 - (Passwort vom Server eingeben)
 - sudo -i
@@ -13,7 +14,8 @@ Zu beachtende Dinge:
 - chmod 777 Mastodon/*
 - cd Mastodon
 - ./Mastodon.sh
-
+</Pre>
+  
 2. Sie müssen, wenn das Script fertig ist, folgende Befehle manuell in das Terminal eingeben.
 
 Befehle:
