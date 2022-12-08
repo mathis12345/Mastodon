@@ -25,3 +25,5 @@ systemctl start nginx
 systemctl restart nginx
 
 systemctl reload nginx
+
+systemctl status nginx
