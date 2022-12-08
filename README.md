@@ -64,3 +64,9 @@ Ursprünglich:
 # ssl_certificate       /etc/letsencrypt/live/example.com/fullchain.pem;
 # ssl_certificate_key   /etc/letsencrypt/live/example.com/privkey.pem;
 </Pre>
+
+Das erwünschte Ergebniss:
+<Pre>
+ssl_certificate       /etc/cert/example.crt;
+ssl_certificate_key   /etc/cert/example.key;
+</Pre>
