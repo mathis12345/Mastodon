@@ -39,3 +39,18 @@ cd Mastodon
 ./Mastodon_002.sh
 </Pre>
 
+Dann geben Sie folgende Befehle wieder manuell ein:
+
+<Pre>
+cd
+
+cd ..
+
+cd etc
+
+cd nginx
+
+cd sites-available
+
+nano mastodon
+</Pre>
