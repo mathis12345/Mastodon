@@ -54,3 +54,13 @@ cd sites-available
 
 nano mastodon
 </Pre>
+
+Nun müssen Sie in Zeile 19 und 28 das "exmample.com" mit Ihrer Domain austauschen, die Sie bei der Einrichtung von Mastodon festgelegt haben.
+
+Außerdem müssen Sie noch in Zeile 37 und 38 das Zeichen "#" wegnehmen diese Zeilen wie folgt verändern:
+
+Ursprünglich:
+<Pre>
+# ssl_certificate       /etc/letsencrypt/live/example.com/fullchain.pem;
+# ssl_certificate_key   /etc/letsencrypt/live/example.com/privkey.pem;
+</Pre>
