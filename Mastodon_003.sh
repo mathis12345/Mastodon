@@ -19,3 +19,9 @@ systemctl enable mastodon-sidekiq
 systemctl enable mastodon-streaming
 
 systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
+
+systemctl start nginx
+
+systemctl restart nginx
+
+systemctl reload nginx
