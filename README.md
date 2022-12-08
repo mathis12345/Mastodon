@@ -28,3 +28,13 @@ RAILS_ENV=production bundle exec rake mastodon:setup
 </Pre>
 
 Nach dem dritten Befehl müssen Sie die angeforderten Daten angeben.
+
+Dann geben Sie folgende Befehle manuell ein:
+
+<Pre>
+exit
+
+cd Mastodon
+
+./Mastodon_002.sh
+</Pre>
