@@ -70,3 +70,17 @@ Das erwünschte Ergebniss:
 ssl_certificate       /etc/cert/example.crt;
 ssl_certificate_key   /etc/cert/example.key;
 </Pre>
+
+Dann drücken Sie die Tastenkombination "Strg + x".
+Dann drücken Sie die Taste "J".
+Dann drücken Sie die Taste "Enter".
+
+Dann geben Sie folgende Befehle manuell in das Terminal ein:
+
+<Pre>
+cd
+  
+cd Mastodon
+  
+./Mastodon_003.sh
+</Pre>
